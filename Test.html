@@ -8,3 +8,1123 @@
 <p>This is a paragraph.</p>
 </body>
 </html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>2021 Year in Review</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+
+  <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+  <!--<link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">-->
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <!--<link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">-->
+  <!--<link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">-->
+
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
+
+
+  <!--libraries for visuals-->
+  <script src="lib/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+  <script src="lib/echarts4r-4.8.0/echarts-en.min.js"></script>
+  <script src="lib/echarts4r-4.8.0/ecStat.min.js"></script>
+  <script src="lib/echarts4r-4.8.0/dataTool.min.js"></script>
+  <script src="lib/echarts4r-binding-0.4.3/echarts4r.js"></script>
+  <script src="lib/apexcharter-binding-0.3.1/apexcharter.js"></script>
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+ 
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;300;500;700&display=swap');
+    @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css");
+
+    .navbar-brand {
+      color: #0b2341;
+    }
+
+    .heading {
+        height: 100vh;
+        padding-top:150px;
+      }
+    #heading-two {
+      height: 100vh;
+      min-height: 900px;
+      margin-bottom:15px;
+      color: #0b413e;
+      background-color: #f6f9fd;
+      overflow-x: hidden;
+    }
+
+    #particles-js-two {
+        height: 30vh;
+        background-color: #55677d;
+    }
+
+    
+    .slide-out-right {
+        -webkit-animation: slide-out-right 120s linear infinite alternate both;
+                animation: slide-out-right 120s linear infinite alternate both;
+    }
+    
+    @-webkit-keyframes slide-out-right {
+      0% {
+        -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+                transform: translateX(0) scaleY(1) scaleX(1);
+        opacity: 1;
+      }
+      100% {
+        -webkit-transform: translateX(1000px) scaleX(2) scaleY(0.2);
+                transform: translateX(1000px) scaleX(2) scaleY(0.2);
+        opacity: 0;
+      }
+    }
+    @keyframes slide-out-right {
+      0% {
+        -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+                transform: translateX(0) scaleY(1) scaleX(1);
+        opacity: 1;
+      }
+      100% {
+        -webkit-transform: translateX(1000px) scaleX(2) scaleY(0.2);
+                transform: translateX(1000px) scaleX(2) scaleY(0.2);
+        opacity: 0;
+      }
+    }
+
+    .slide-out-blurred-right {
+        -webkit-animation: slide-out-blurred-right 20s linear infinite alternate both;
+                animation: slide-out-blurred-right 20s linear infinite alternate both;
+    }
+
+
+@-webkit-keyframes slide-out-blurred-right {
+    0% {
+      -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+              transform: translateX(0) scaleY(1) scaleX(1);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateX(1000px) scaleX(2) scaleY(0.2);
+              transform: translateX(1000px) scaleX(2) scaleY(0.2);
+      -webkit-transform-origin: 0% 50%;
+              transform-origin: 0% 50%;
+      opacity: 0;
+    }
+  }
+  @keyframes slide-out-blurred-right {
+    0% {
+      -webkit-transform: translateX(0) scaleY(1) scaleX(1);
+              transform: translateX(0) scaleY(1) scaleX(1);
+      -webkit-transform-origin: 50% 50%;
+              transform-origin: 50% 50%;
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateX(1000px) scaleX(2) scaleY(0.2);
+              transform: translateX(1000px) scaleX(2) scaleY(0.2);
+      -webkit-transform-origin: 0% 50%;
+              transform-origin: 0% 50%;
+      opacity: 0;
+    }
+  }
+  
+  
+
+  .slide-out-right-reverse {
+	-webkit-animation: slide-out-right-reverse 28s cubic-bezier(0.550, 0.085, 0.680, 0.530) infinite alternate-reverse both;
+	        animation: slide-out-right-reverse 28s cubic-bezier(0.550, 0.085, 0.680, 0.530) infinite alternate-reverse both;
+}
+
+
+ @-webkit-keyframes slide-out-right-reverse {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateX(1000px);
+              transform: translateX(1000px);
+      opacity: 0;
+    }
+  }
+  @keyframes slide-out-right {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateX(1000px);
+              transform: translateX(1000px);
+      opacity: 0;
+    }
+  }
+
+
+.slide-out-right-slow {
+    -webkit-animation: slide-out-right-slow 220s linear infinite alternate both;
+            animation: slide-out-right-slow 220s linear infinite alternate both;
+}
+
+@-webkit-keyframes slide-out-right-slow {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+}
+@keyframes slide-out-right {
+  0% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateX(1000px);
+            transform: translateX(1000px);
+    opacity: 0;
+  }
+}
+
+
+.slide-out-left {
+	-webkit-animation: slide-out-left 25s cubic-bezier(0.550, 0.085, 0.680, 0.530) 500ms infinite alternate-reverse both;
+	        animation: slide-out-left 25s cubic-bezier(0.550, 0.085, 0.680, 0.530) 500ms infinite alternate-reverse both;
+}
+
+
+ @-webkit-keyframes slide-out-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
+      opacity: 0;
+    }
+  }
+  @keyframes slide-out-left {
+    0% {
+      -webkit-transform: translateX(0);
+              transform: translateX(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateX(-1000px);
+              transform: translateX(-1000px);
+      opacity: 0;
+    }
+  }
+  
+
+  .slide-out-bck-right {
+	-webkit-animation: slide-out-bck-right 55s ease-in 500ms infinite alternate-reverse both;
+	        animation: slide-out-bck-right 55s ease-in 500ms infinite alternate-reverse both;
+}
+
+
+ @-webkit-keyframes slide-out-bck-right {
+    0% {
+      -webkit-transform: translateZ(0) translateX(0);
+              transform: translateZ(0) translateX(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateZ(-1100px) translateX(1000px);
+              transform: translateZ(-1100px) translateX(1000px);
+      opacity: 0;
+    }
+  }
+  @keyframes slide-out-bck-right {
+    0% {
+      -webkit-transform: translateZ(0) translateX(0);
+              transform: translateZ(0) translateX(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateZ(-1100px) translateX(1000px);
+              transform: translateZ(-1100px) translateX(1000px);
+      opacity: 0;
+    }
+  }
+  
+
+  .slide-out-bck-right-fast {
+	-webkit-animation: slide-out-bck-right-fast 25s ease-in 500ms infinite alternate-reverse both;
+	        animation: slide-out-bck-right-fast 25s ease-in 500ms infinite alternate-reverse both;
+}
+
+
+ @-webkit-keyframes slide-out-bck-right-fast {
+    0% {
+      -webkit-transform: translateZ(0) translateX(0);
+              transform: translateZ(0) translateX(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateZ(-1100px) translateX(1000px);
+              transform: translateZ(-1100px) translateX(1000px);
+      opacity: 0;
+    }
+  }
+  @keyframes slide-out-bck-right-fast {
+    0% {
+      -webkit-transform: translateZ(0) translateX(0);
+              transform: translateZ(0) translateX(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateZ(-1100px) translateX(1000px);
+              transform: translateZ(-1100px) translateX(1000px);
+      opacity: 0;
+    }
+  }
+  
+
+  .slide-out-bck-right-faster {
+	-webkit-animation: slide-out-bck-right-faster 35s ease-in 500ms infinite alternate-reverse both;
+	        animation: slide-out-bck-right-faster 35s ease-in 500ms infinite alternate-reverse both;
+}
+
+
+ @-webkit-keyframes slide-out-bck-right-faster {
+    0% {
+      -webkit-transform: translateZ(0) translateX(0);
+              transform: translateZ(0) translateX(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateZ(-1100px) translateX(1000px);
+              transform: translateZ(-1100px) translateX(1000px);
+      opacity: 0;
+    }
+  }
+  @keyframes slide-out-bck-right-faster {
+    0% {
+      -webkit-transform: translateZ(0) translateX(0);
+              transform: translateZ(0) translateX(0);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateZ(-1100px) translateX(1000px);
+              transform: translateZ(-1100px) translateX(1000px);
+      opacity: 0;
+    }
+  }
+
+
+  .roll-out-left {
+	-webkit-animation: roll-out-left 0.6s ease-in infinite alternate-reverse both;
+	        animation: roll-out-left 0.6s ease-in infinite alternate-reverse both;
+}
+
+ @-webkit-keyframes roll-out-left {
+    0% {
+      -webkit-transform: translateX(0) rotate(0deg);
+              transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateX(-1000px) rotate(-540deg);
+              transform: translateX(-1000px) rotate(-540deg);
+      opacity: 0;
+    }
+  }
+  @keyframes roll-out-left {
+    0% {
+      -webkit-transform: translateX(0) rotate(0deg);
+              transform: translateX(0) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      -webkit-transform: translateX(-1000px) rotate(-540deg);
+              transform: translateX(-1000px) rotate(-540deg);
+      opacity: 0;
+    }
+  }
+  
+  </style>
+
+</head>
+
+<body id="page-top" class="fw-light">
+    
+
+ 
+  <!-- ====== NAVBAR======== -->
+  <nav id="header" class="navbar navbar-expand-lg navbar-light bg-light shadow fixed-top">
+    <div id="navbar" class="container text-uppercase">
+      <a class="navbar-brand logo" href="#page-top"><strong>Year in Review</strong></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item active">
+            <a class="nav-link scrollto " href="#introductory">Overview</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scrollto" href="#introductory_two">Distributions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scrollto " href="#tiles_first">Duration, Etc.</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scrollto" href="#portfolio-details">Business Domain</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scrollto" href="#team">Deep Dive</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link scrollto" href="#faq">Recommendations</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div id="heading-two">
+	<div class="heading pb-5">
+        <div class="row h-100 align-items-center">
+        
+            <div class="container slide-out-right" data-aos="fade-in" style="margin-top:-60px;">
+                <div class="container offset-lg-1 slide-out-bck-right-fast">
+                    <i style="font-size:32px; filter: blur(1px);" class="bi bi-square-fill"></i>
+                </div>
+                <i style="font-size:58px; filter: blur(1px)" data-aos="fade-in" class="bi bi-square-fill" style="margin-top:-200px;"></i>
+                <div class="container slide-out-bck-right-faster">
+                    <i style="font-size:122px; filter: blur(1px)" data-aos="fade-in" class="bi bi-square-fill"></i>
+                    <div class="container slide-out-left" style="margin-top:-200px;">
+                        <i style="font-size:62px; filter: blur(1px); margin-top:-200px;" class="bi bi-square-fill"></i>
+                        <div class="container offset-lg-1 slide-out-bck-right">
+                            <i style="font-size:22px;filter: blur(1px);" class="bi bi-square-fill"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="container offset-lg-4 slide-out-bck-right">
+                    <i style="font-size:92px;filter: blur(1px);" class="bi bi-square-fill"></i>
+                </div>
+            </div>
+           
+            <div class="container slide-out-right-reverse">
+                <i style="font-size:74px; filter: blur(1px)" class="bi bi-square-fill"></i>
+                <div class="container slide-out-left">
+                    <i style="font-size:42px;filter: blur(1px);" class="bi bi-square-fill"></i>
+                </div>
+            </div>
+            
+            
+
+            <div class="col-12 text-center" style="margin-top:-200px;">
+                <h1 class="fw-light animate__animated animate__fadeInDown text-uppercase text-center" style="margin-top:-25px; color:#0b2341;">
+                    <strong>HelpDesk@IBM</strong> Year in Review
+                </h1>
+                <p class="lead animate__animated animate__fadeInUp" style="color:#0b2341;">
+                    <i>Insights and Analysis</i>
+                </p>
+                <div class="container">
+                    <a href="#introductory" class="scrollto text-uppercase">
+                        <h2 class="animated animate__animated animate__fadeInUp bi bi-arrow-down-circle" style="color:#cfcfdb">
+                        </h2>
+                    </a>
+                    <div class="container slide-out-right pt-1">
+                        <i style="font-size:74px; filter: blur(1px); margin-right:-250px;" data-aos="fade-in" class="bi bi-square-fill"></i>
+                        <div class="container slide-out-left">
+                            <i style="font-size:42px;filter: blur(1px);" class="bi bi-square-fill"></i>
+                            <div class="container slide-out-bck-right-fast">
+                                <i style="font-size:58px; filter: blur(1px);" class="bi bi-square-fill"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+
+          
+
+        </div>
+      </div>
+</div>
+
+
+
+  <!-- ========MAIN========= -->
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="introductory" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title" style="padding-top: 30px;">
+          <h2>Overview</h2>
+          <p>NPS</p>
+        </div>
+
+        <div class="row content pt-2" style="font-size: 18px;">
+          <div class="col-lg-6">
+            <p>
+              This page focuses on NPS Scores (2021). It contains analyses and a few recommendations.
+              <br />
+              <br />
+              In general, IT Support enjoys impressive NPS Scores: 
+                <ul style = "padding-left: 1.1rem; padding-bottom: 1.01rem;">
+                  <li><i class="bi bi-check2-all"></i>87% of tickets are rated 9 and above.</li>
+                  <li><i class="bi bi-check2-all"></i>Average NPS across applications is 9.3.</li>
+                </ul> 
+               Importantly, ~800k tickets were submitted in 2021 but only ~97k tickets have NPS scores associated. 
+              <br />
+              <br />
+                Incentivizing responses, and critical responses in particular, would likely support more robust analyses of UX. 
+              <br />
+            </p>
+            <br />
+            <p class="pb-3">
+              <strong>Summary Statistics:</strong>
+            </p>
+            <ul style="list-style-type:none; padding-right: 30px;">
+              <li><i class="bi bi-filter-circle-fill"></i> NPS Surveys collect two sorts of data relevant to this review: an NPS Score, and an user-reported Issue Status.
+                <br />
+                <br />
+                <ul>
+                  <li><i class="bi bi-check2-all"></i>Exclusive of Not Entitled tickets, user-reported issue resolution rate is high, at 88%.</li>
+                  <!--<li><i class="bi bi-check2-all"></i>~71k users, or 74% of survey respondents, give IT Support a perfect 10. </li>-->
+                  
+                </ul>
+              </li>
+              <br />
+              <li><i class="bi bi-filter-circle-fill"></i>~13k respondents completed multiple surveys, suggesting a small subset of highly engaged users. 
+                <br />
+                <br />
+                <ul>
+                  <li>
+                    <i class="bi bi-check2-all"></i>Mean NPS for single respondents and repeat respondents is 9.26 and 9.32 respectively.
+                  </li>
+                  <li>
+                    <i class="bi bi-check2-all"></i>These data suggest repeat respondents enjoy better UX, on average, than single respondents.
+                  </li>
+                  <!--<li>
+                              <i class="bi bi-check2-all"></i>The result is a long-tailed distribution (many applications with low ticket count). 
+                          </li>
+                          <li>
+                            <i class="bi bi-check2-all"></i>The finding above speaks to the importance of consumer behavior (i.e., factors outside the advisor's control) in driving the rate of Not Entitled tickets.
+                        </li>-->
+                </ul>
+              </li>
+              <li>
+            </ul>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0" style="padding-bottom: 30px; padding-left: 25px;">
+            <ul>
+
+              <li>Reopen rate, Not Entitled tickets, and Calendar Duration in particular drive user dissatisfaction.
+                <br />
+                <br />
+                <ul>
+                  <li>
+                    <i class="bi bi-check2-all"></i>For example: the likelihood of an NPS score greater than 8 decreases ~39% when a ticket remains unresovled after 24hrs. 
+                  </li>
+                </ul>
+              </li>
+              <br />
+            </ul>
+            <div id="htmlwidget-0d238c6f15b953f25420" style="width:100%;height:700px;" class="echarts4r html-widget">
+            </div>
+              <script type="application/json" data-for="htmlwidget-0d238c6f15b953f25420">
+                {"x":{"theme":"","tl":false,"draw":true,"renderer":"canvas","events":[],"buttons":[],"opts":{"yAxis":[{"show":true,"axisLabel":{"formatter":"function(value, index) {\n        var fmt = new Intl.NumberFormat('en', {\"style\":\"percent\",\"minimumFractionDigits\":0,\"maximumFractionDigits\":0,\"currency\":\"USD\"});\n        return fmt.format(value);\n    }"}}],"xAxis":[{"data":["Open -24 HRs","Open +24 HRs"],"type":"category","boundaryGap":true}],"legend":{"data":["NPS Score > 8"]},"series":[{"data":[{"value":["Open -24 HRs","0.8761033"]},{"value":["Open +24 HRs","0.7958319"]}],"name":"NPS Score > 8","type":"bar","yAxisIndex":0,"xAxisIndex":0,"coordinateSystem":"cartesian2d"}],"grid":[{"right":"5%","left":"15%"}],"tooltip":{"trigger":"item","formatter":"function(params, ticket, callback) {\n        var fmt = new Intl.NumberFormat('en', {\"style\":\"percent\",\"minimumFractionDigits\":0,\"maximumFractionDigits\":0,\"currency\":\"USD\"});\n        var idx = 0;\n        if (params.name == params.value[0]) {\n            idx = 1;\n        }\n        return params.value[0] + '<br>' +\n               params.marker + ' ' +\n               params.seriesName + ': ' + fmt.format(parseFloat(params.value[idx]));\n    }"},"color":["#0c1878"]},"dispose":true},"evals":["opts.yAxis.0.axisLabel.formatter","opts.tooltip.formatter"],"jsHooks":[]}
+              </script>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+
+
+
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts">
+      <div class="container" data-aos="fade-up" style="padding-bottom: 30px;">
+
+
+        <div class="row no-gutters">
+
+          <div class="col-xl-3 col-lg-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="bi bi-emoji-smile"></i>
+              <span data-purecounter-start="0" data-purecounter-end="97118" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p> <strong>Completed Surveys</strong></p>
+
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="bi bi-journal-richtext"></i>
+              <span data-purecounter-start="0" data-purecounter-end="49100" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p><strong>Unique Respondents</strong></p>
+
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="bi bi-headset"></i>
+              <span data-purecounter-start="0" data-purecounter-end="13433" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p><strong>Repeat Respondents</strong> </p>
+
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-6 d-md-flex align-items-md-stretch">
+            <div class="count-box">
+              <i class="bi bi-people"></i>
+              <span data-purecounter-start="0" data-purecounter-end="8093" data-purecounter-duration="1"
+                class="purecounter"></span>
+              <p><strong>Responses per Month (Average)</strong></p>
+
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+
+        <!-- ======= About Section ======= -->
+        <section id="introductory_two" class="about" style="background-color:#f6f9fd;">
+          <div class="container" data-aos="fade-up">
+    
+            <div class="section-title" style="padding-top: 30px;">
+              <h2>First</h2>
+              <p>Visual: NPS Score Distribution</p>
+            </div>
+		
+            <div class="row content" style="font-size: 18px;">
+              <div class="col-lg-10 lh-lg">
+                <p>
+                  The graphic below shows NPS Scores for 2021, broken down by Promoter, Detractor, and Passive. 
+		<br /> 
+		<br /> 
+		The chart's sections are scaled to improve interpretability. For example, 87% of survey respondents are Promoters, with ~74% of respondents giving  a perfect 10. The Promoter section is accordingly oversized relative to Passive and Detractors, each barely visible on the chart.
+		</p>
+              </div>
+              <div id="card-one" style = "width:100%;">
+                <div class="card m-5 shadow p-3 mb-5 rounded" style="height:830px">
+                  <div  class="pb-5 card-body">
+                        <h2 class="card-title fw-light pt-2">
+                        NPS DISTRIBUTIONS
+                        </h2>
+                        <div id="htmlwidget-d4b57151d7700c901973" style="width:100%;height:700px;" class="echarts4r html-widget pt-5"></div>
+                          <script type="application/json" data-for="htmlwidget-d4b57151d7700c901973">
+			  {"x":{"theme":"","tl":false,"draw":true,"renderer":"canvas","events":[],"buttons":[],"opts":{"legend":{"data":["Promoters","Passives","Detractors"]},"series":[{"name":"Integrations","type":"pie","roseType":"radius","data":[{"value":84601,"name":"Promoters"},{"value":6859,"name":"Passives"},{"value":5658,"name":"Detractors"}]}],"tooltip":{"trigger":"item","formatter":"\n                                        function(params){\n                                        return('<strong>' + params.name +\n                                        '<\/strong><br />total: ' + params.value +\n                                        '<br />percent: ' +  params.percent)  +'%' }  "},"color":["#0000A3","#269ece","#4c00a3","#4c00a3","#7F3E71","#DF265E"]},"dispose":true},"evals":["opts.tooltip.formatter"],"jsHooks":[]}
+			  </script>
+                     
+                </div>
+                </div>
+       
+            </div>
+    
+
+    
+          </div>
+        </section><!-- End About Section -->
+
+    <!-- =============tiles like gitub============-->
+    <section id="tiles_first" class="about" style="font-size:1.2rem;">
+      <!-- Page Content -->
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="section-title" style="padding-top: 30px;">
+          <h2>Second</h2>
+          <p>Duration, Application, Issue Status</p>
+        </div>
+
+        <div class="row p-5">
+          <div class="col-xl-8" style="padding-right: 0; padding-left:0;">
+            <div class="card h-100 p-5">
+              <div class="card-body">
+                <br />
+                <div id="htmlwidget-334020fa6135de80dc79" style="width:100%;height:600px;"
+                  class="echarts4r html-widget pt-4" data-aos="fade-right" data-aos-delay="100"></div>
+                     <script type="application/json" data-for="htmlwidget-334020fa6135de80dc79">
+                       {"x":{"theme":"","tl":false,"draw":true,"renderer":"canvas","events":[],"buttons":[],"opts":{"yAxis":[{"show":true,"min":0.6,"axisLabel":{"formatter":"function(value, index) {\n        var fmt = new Intl.NumberFormat('en', {\"style\":\"percent\",\"minimumFractionDigits\":0,\"maximumFractionDigits\":0,\"currency\":\"USD\"});\n        return fmt.format(value);\n    }"}}],"xAxis":[{"data":["Day 0","Day 1","Day 2","Day 3","Day 4","Day 5","Day 6","Day 7","Day 8"],"type":"category","boundaryGap":true}],"legend":{"data":["Resolution Rate","Promoter Rate"]},"series":[{"data":[{"value":["Day 0","0.88"]},{"value":["Day 1","0.85"]},{"value":["Day 2","0.81"]},{"value":["Day 3","0.82"]},{"value":["Day 4","0.82"]},{"value":["Day 5","0.78"]},{"value":["Day 6","0.75"]},{"value":["Day 7","0.69"]},{"value":["Day 8","0.70"]}],"name":"Resolution Rate","type":"bar","yAxisIndex":0,"xAxisIndex":0,"coordinateSystem":"cartesian2d"},{"data":[{"value":["Day 0","0.88"]},{"value":["Day 1","0.83"]},{"value":["Day 2","0.81"]},{"value":["Day 3","0.80"]},{"value":["Day 4","0.84"]},{"value":["Day 5","0.79"]},{"value":["Day 6","0.77"]},{"value":["Day 7","0.73"]},{"value":["Day 8","0.73"]}],"name":"Promoter Rate","type":"bar","yAxisIndex":0,"xAxisIndex":0,"coordinateSystem":"cartesian2d"}],"grid":[{"right":"5%"},{"left":"10%"}],"tooltip":{"trigger":"item","formatter":"function(params, ticket, callback) {\n        var fmt = new Intl.NumberFormat('en', {\"style\":\"percent\",\"minimumFractionDigits\":0,\"maximumFractionDigits\":0,\"currency\":\"USD\"});\n        var idx = 0;\n        if (params.name == params.value[0]) {\n            idx = 1;\n        }\n        return params.value[0] + '<br>' +\n               params.marker + ' ' +\n               params.seriesName + ': ' + fmt.format(parseFloat(params.value[idx]));\n    }"},"color":["#269ece","#004197","#0000A3","#4c00a3","#7F3E71","#DF265E"]},"dispose":true},"evals":["opts.yAxis.0.axisLabel.formatter","opts.tooltip.formatter"],"jsHooks":[]}
+                    </script>
+
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4 " style="padding-right: 0; padding-left:0" data-aos="fade-left" data-aos-delay="100">
+            <div id="first-card" class="card h-100 p-5">
+              <div class="card-body">
+                <h2 class="card-title fw-light pt-3">
+                  <strong>Duration</strong>
+                </h2>
+                <p class="card-text pb-4" style="padding-top: 30px;">
+                  Rate of Issue Resolution, and proportion of Promoters, both decrease over time, as depicted in this visual.
+                  <br />
+                  <br />
+                  More specifically, the odds of receiving a 9 or 10 decrease by 39% after 24hrs. For issue resolution, the odds decrease by ~35%. 
+                  <br />
+                  <br />
+                  In short, the longer a ticket remains open, the more likely UX will diminish. Issues are also more likely to remain unresovled.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4" style="padding-right: 0; padding-left:0" data-aos="fade-right" data-aos-delay="100">
+            <div id="second-card" class="card h-100 p-5">
+              <div class="card-body">
+                <h2 class="card-title fw-light pt-3">
+                  <strong>Application</strong>
+                </h2>
+                <p class="card-text pb-4" style="padding-top: 30px;">
+                  NPS varies from application to application. This visual speaks to said variability.
+                  <br />
+                  <br />
+                  For example, the odds of an NPS score above 8 increase ~1.8x when dealing with 1Password. 
+                  <br />
+                  <br />
+                  Silent Call/Chat has the opposite effect.
+                  <br />
+                  <br />
+                  Values less than 1 indicate potential areas for improvement, as they lower the odds of a high NPS score, relative to other applications.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-8" style="padding-right: 0; padding-left:0">
+            <div id="second-card-small" class="card h-100 p-5" data-aos="fade-left" data-aos-delay="100">
+              <div class="card-body">
+                <br />
+                <br />
+                <div id="htmlwidget-383031c7a91aa380f6d4" style="width:100%;height:700px;"
+                  class="apexcharter html-widget"></div>
+                  <script type="application/json" data-for="htmlwidget-383031c7a91aa380f6d4">
+                    {"x":{"ax_opts":{"chart":{"type":"polarArea"},"series":[0.19,0.2,0.42,0.72,0.72,0.75,0.85,1.22,1.24,1.25,1.26,1.33,1.33,1.38,1.47,1.47,1.55,1.62,1.74,1.8,1.89],"labels":["Silent Call/Chat","Disconnected","NOTENTITLED","IBMVERSE","iOS","LINUX","Mac","NWCONNECTIVITY","w3id SSO","CISCOANYCONNECT","Code42","NOTES","Virtual Machine","MSOFFICE","OUTLOOK MAIL","SASVPN","OFFICE@IBM","NOTES10","MIAS","1Password","OPENTEXTSOCKS"],"yaxis":{"labels":{"style":{"colors":"#848484"},"formatter":"function(value) {return value.toFixed(1);}"}},"xaxis":{"labels":{"style":{"colors":"#848484"}}},"fill":{"opacity":1},"legend":{"show":false},"stroke":{"width":0},"dataLabels":{"enabled":false},"colors":["#DF265E","#C83163","#B03768","#983C6C","#7F3E71","#76327E","#6C258A","#5E1697","#4C00A3","#4100A3","#3400A3","#2300A3","#0000A3","#081AA0","#0B299D","#09369A","#004197","#1457A5","#1E6EB2","#2486C0","#269ECE"]},"auto_update":{"series_animate":true,"update_options":false,"options_animate":true,"options_redrawPaths":true,"update_synced_charts":false},"sparkbox":false,"xaxis":{"min":"1Password","max":"w3id SSO"},"type":"polarArea"},"evals":["ax_opts.yaxis.labels.formatter"],"jsHooks":[]}
+
+                  </script>
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-8" style="padding-right: 0; padding-left:0">
+            <div class="card h-100 px-5 pb-5" data-aos="fade-right" data-aos-delay="100">
+              <div class="card-body pb-3">
+                <br />
+                <br />
+                <div id="prob-solved" 
+                  class="apexcharter html-widget"></div>
+                  <script type="application/json" data-for="prob-solved">
+                    {"x":{"ax_opts":{"chart":{"type":"treemap"},"series":[{"name":"exp","data":[{"x":"10 WINDOWS","y":0.7},{"x":"1Password","y":3.8},{"x":"Beekeeper","y":0.8},{"x":"BOX","y":0.6},{"x":"CISCOANYCONNECT","y":2.4},{"x":"Disconnected","y":0.2},{"x":"IBMVERSE","y":0.6},{"x":"iOS","y":0.6},{"x":"ISSI","y":1.7},{"x":"LINUX","y":0.8},{"x":"Mac","y":0.5},{"x":"MIAS","y":2},{"x":"MSOFFICE","y":2.3},{"x":"NOTENTITLED","y":0.2},{"x":"NOTES","y":1.4},{"x":"NOTES10","y":1.3},{"x":"NWCONNECTIVITY","y":1.7},{"x":"OFFICE@IBM","y":2.8},{"x":"SASVPN","y":2.6},{"x":"Silent Call/Chat","y":0.2},{"x":"Virtual Machine","y":1.4},{"x":"W3ID","y":1.3},{"x":"w3id SSO","y":3.5},{"x":"Webex Meetings","y":0.8}]}],"yaxis":{"labels":{"style":{"colors":"#848484"}}},"xaxis":{"labels":{"style":{"colors":"#848484"}}},"fill":{"opacity":1},"colors":["#08210e"]},"auto_update":{"series_animate":true,"update_options":false,"options_animate":true,"options_redrawPaths":true,"update_synced_charts":false},"sparkbox":false,"type":"treemap"},"evals":[],"jsHooks":[]}
+                  </script>
+
+
+              </div>
+            </div>
+          </div>
+          <div class="col-xl-4" style="padding-right: 0; padding-left:0" data-aos="fade-left" data-aos-delay="100">
+            <div id="third-card" class="card h-100 p-5">
+
+              <div class="card-body">
+                <h2 class="card-title fw-light pt-3">
+                  <strong>Issue Status</strong>
+                </h2>
+                <p class="card-text pb-4" style="padding-top: 30px;">
+                  Issue Status (user reported) varies from application to application. This visual speaks to said variability.
+                  <br />
+                  <br />
+                  For example, submitting a Beekeeper ticket decreases the odds of issue resolution 20%, relative to other applications.
+                  <br />
+                  <br />
+                  Values less than 1 indicate potential areas for improvement, as they lower the odds of issue resolution, relative to other applications.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- /.row -->
+    </section>
+
+
+    <!-- ======= TreeMap Section======= 
+   <section id="why-us" class="why-us section-bg" style="background-color: #fff; padding-top:30px; padding-bottom:30px;"> -->
+
+    <section id="portfolio-details" class="portfolio-details" style="background-color:#f6f9fd;">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="section-title" style="padding-top: 50px;">
+          <h2>Third</h2>
+          <p>BUSINESS DOMAIN</p>
+        </div>
+
+
+        <!-- ======= Portfolio Details Section ======= -->
+        <div class="container" style="font-size: 1.2rem;">
+
+          <div class="row gy-5">
+
+            <div class="col-lg-8 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100"
+              sytle="padding-top:30px; padding-bottom:30px;">
+              <div id="htmlwidget-55f78cb31e19d8da0e4f" style="width:100%;height:900px;"
+                class="echarts4r html-widget"></div>
+
+                <script type="application/json" data-for="htmlwidget-55f78cb31e19d8da0e4f">
+                  {"x":{"theme":"","tl":false,"draw":true,"renderer":"canvas","events":[],"buttons":[],"opts":{"yAxis":[{"show":true,"axisLabel":{"formatter":"function(value, index) {\n        var fmt = new Intl.NumberFormat('en', {\"style\":\"percent\",\"minimumFractionDigits\":0,\"maximumFractionDigits\":0,\"currency\":\"USD\"});\n        return fmt.format(value);\n    }"}}],"xAxis":[{"data":["Cloud and Cognitive Computing","Corporate Headquarters (CHQ/OTH)","Cloud","Digital Sales","Finance and Operations","Global Business Services","Global Market & Sales (GLMKT)","Global Technology Services","Research","Systems","WW Ecosystems"],"type":"category","boundaryGap":true}],"legend":{"data":["Rate: NPS < 9"]},"series":[{"data":[{"value":["Cloud and Cognitive Computing","0.15140340"]},{"value":["Corporate Headquarters (CHQ/OTH)","0.12796435"]},{"value":["Cloud","0.13908206"]},{"value":["Digital Sales","0.09722222"]},{"value":["Finance and Operations","0.10543051"]},{"value":["Global Business Services","0.12692324"]},{"value":["Global Market & Sales (GLMKT)","0.13246855"]},{"value":["Global Technology Services","0.13089262"]},{"value":["Research","0.21282051"]},{"value":["Systems","0.18077209"]},{"value":["WW Ecosystems","0.16666667"]}],"name":"Rate: NPS < 9","type":"bar","yAxisIndex":0,"xAxisIndex":0,"coordinateSystem":"cartesian2d"}],"tooltip":{"trigger":"item","formatter":"function(params, ticket, callback) {\n        var fmt = new Intl.NumberFormat('en', {\"style\":\"percent\",\"minimumFractionDigits\":2,\"maximumFractionDigits\":2,\"currency\":\"USD\"});\n        var idx = 0;\n        if (params.name == params.value[0]) {\n            idx = 1;\n        }\n        return params.value[0] + '<br>' +\n               params.marker + ' ' +\n               params.seriesName + ': ' + fmt.format(parseFloat(params.value[idx]));\n    }"},"grid":[{"left":"10%"}],"color":["#213449"]},"dispose":true},"evals":["opts.yAxis.0.axisLabel.formatter","opts.tooltip.formatter"],"jsHooks":[]}
+                </script>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="portfolio-info pb-2">
+                <h3>Overview</h3>
+                <ul>
+                  <li><strong>Count of Domains Analyzed</strong>: 11</li>
+                  <li><strong>Highest Rate</strong>: Research (21.28%)</li>
+                  <li><strong>Lowest Rate</strong>: Digital Sales (9.72%)</li>
+                </ul>
+              </div>
+              <div class="portfolio-description">
+                <div class="container">
+                  <h2 class="pb-3">
+                    Business Domain Highlights
+                  </h2>
+                  <p>
+                    This visual depicts the rate of NPS Scores less than 9, broken down per Business Domain.
+                    <br />
+                    <br />
+                    For example, 18% of NPS Scores for Systems are below 9.
+                    <br />
+                    <br />
+                    Importantly, relative to other Business Domains, Systems tickets are more likely to remain unresolved after 24hrs, attesting to the heightened importance of expedient issue resolution for certain Business Domains.
+                    <br />
+                    <br />
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section><!-- End Portfolio Details Section -->
+
+
+
+    <!-- ======= Dropdown Section======= 
+    <section id="why-us" class="why-us section-bg" style="background-color:#fff;">
+
+      <div class="container-fluid" data-aos="fade-up">
+
+        <div class="row">
+
+          <div class="col-xl-5 align-items-stretch image-box aos-init aos-animate"
+            style='background-image: url("assets/img/portfolio/image_one.jpg");' data-aos="zoom-in"
+            data-aos-delay="100">
+          </div>
+
+          <div id="style" class="col-xl-7 d-flex flex-column justify-content-center align-items-stretch"
+            style="padding-top: 30px; font-size:1.2rem;">
+
+            <div class="content" style="padding-bottom: 30px;">
+              <h3 class="fw-light text-uppercase">General Observations<strong></strong></h3>
+              <ul style="padding-top: 30px; list-style-type:none;">
+                <li>
+                  <i class="bi bi-check2-all"></i> <strong>New hires (0 - 2 years)</strong> are more likely to submit
+                  Not Entitled tickets than their more tenured counterparts.
+                </li>
+                <br />
+                <li>
+                  <i class="bi bi-check2-all"></i> <strong>A roadmap outlining HelpDesks and their respective
+                    responsibilities,</strong> along with increased communication during onboarding, <strong>will likely
+                    reduce the rate of Not Entitled tickets across Business Domains;</strong> the same holds for IBMers due for
+                  a device refresh.
+                </li>
+              </ul>
+            </div>
+
+            <div class="accordion-list">
+              <ul>
+                <li>
+                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span> The
+                    likelihood of a Not Entitled ticket increases Quarters 1 - 6. <i
+                      class="bx bx-chevron-down icon-show"></i><i class="bi bi-check2-all"></i></a>
+                  <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
+                    <p>
+                      IMBers are more likely to submit a Not Entitled ticket to HelpDesk during their first year and a
+                      half with the company than at any other time. For example, submitting a ticket during the 4th
+                      quarter increased the likelihood by a factor of ~1.6, or 60%, on average.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span> The
+                    likelihood of a Not Entitled ticket is flat, or decreases, as of Quarter 15. <i
+                      class="bx bx-chevron-down icon-show"></i><i class="bbi bi-check2-all"></i></a>
+                  <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      As of Q15 (3+ years), IBMers are either no more likely to submit a Not Entitled ticket than their
+                      peers, or less likely to submit a Not Entitled ticket than their peers. The effect is most notable
+                      at Q35, where the likelihood of submitting a Not Entitled ticket is reduced by a factor of ~0.76,
+                      or 24%.
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span> Q12
+                    - Q13 (device refresh) increase the likelihood of Not Entitled tickets. <i
+                      class="bx bx-chevron-down icon-show"></i><i class="bi bi-check2-all"></i></a>
+                  <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      Q12 and Q13 (end of year 2, beginning of year 3) also saw an uptick in the rate of Not Entitled
+                      tickets. These quarters coincide with device refresh, and are consisent with our data set more
+                      generally (see above).
+                    </p>
+                  </div>
+                </li>
+
+                <li>
+                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-4" class="collapsed"><span>04</span>
+                    General Observation <i class="bx bx-chevron-down icon-show"></i><i class="bi bi-check2-all"></i></a>
+                  <div id="accordion-list-4" class="collapse" data-bs-parent=".accordion-list">
+                    <p>
+                      That tenure plays a role in driving the rate of Not Entitled tickets implies the following:
+                      effective use of IT Support entails a learning curve and, for the new IBMer, is not intuitive.
+                    </p>
+                  </div>
+                </li>
+
+              </ul>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section>-->
+    <!-- End Why Us Section -->
+
+
+
+    <!-- ======= Team Section (Part of Balloons)======= -->
+    <section id="team" class="team section-bg" style="background-color:#fff;">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Fourth</h2>
+          <p>Deep Dive</p>
+        </div>
+
+        <div class="row">
+
+
+          <div id="deep" class="col-xl-6 col-lg-6 col-md-6">
+            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+              <a href="contact_type.html">
+              <img src="image_nine.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+
+                
+                  <div class="member-info-content">
+                    <h4>Contact Type</h4>
+                    <h4><i style="color:#fff;" class="bi bi-arrow-right"></i></h4>
+                  </div>
+                
+
+              </div>
+            </a>
+            </div>
+          </div>
+
+          <div id="deep" class="col-xl-6 col-lg-6 col-md-6" data-wow-delay="0.1s">
+            <div class="member" data-aos="zoom-in" data-aos-delay="200">
+              <a href="issue_analysis.html">
+              <img src="image_one.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                
+                  <div class="member-info-content">
+                    <h4>Issue Type</h4>
+                    <h4><i style="color:#fff;" class="bi bi-arrow-right"></i></h4>
+                  </div>
+               
+              </div>
+               </a>
+            </div>
+          </div>
+
+          <!--<div id="deep-two" class="col-xl-6 offset-xl-3 col-lg-4 col-md-6" data-wow-delay="0.2s">
+            <div class="member" data-aos="zoom-in" data-aos-delay="300">
+              <a href="search_tickets.html">
+              <img src="image_eight.jpg" class="img-fluid" alt="">
+              <div class="member-info">
+                
+                  <div class="member-info-content">
+                    <h4>w3 Search & Readability</h4>
+                    <h4><i style="color:#fff;" class="bi bi-arrow-right"></i></h4>
+                  </div>
+               
+              </div>
+            </a>
+            </div>
+          </div>-->
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Frequently Asked Questions Section ======= -->
+    <section id="faq" class="faq" style="background-color:#fff;">
+      <div class="container pt-4" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Fifth</h2>
+          <p>Recommendations</p>
+        </div>
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-5">
+            <i class="bx bx-help-circle"></i>
+            <h4 class="fs-5 p-2">First Recommendation</h4>
+          </div>
+          <div class="col-lg-7 lh-lg">
+            <!--<p>
+             Disconnected Calls, Silent Call/Chat, and Not Entitled tickets are prone to low NPS scores, relative to other issues/applications. Not Entitled tickets in particular are prone to increased user effort. A simplified routing logic at the top of the funnel will help users, and chat users in particular, find appropriate channels of support in a more efficacious manner. Providing improved access to relevant documenation will have a similar effect. (For example, if users struggle in setting up VS Code, it's unclear how they're to get help.)
+            </p>-->
+	 	<p class="fs-5">
+                Integrate w3 Search data, Slack data, and Service Now data into a single data analytics platform (i.e., create a 'Journey Lake').  
+                Leverage said analytics platform to (1) improve customer journey mapping and (2) develop models predictive of pain points during the journey to issue resolution.
+                 In general, greater insight into the customer journey will facilitate a more proactive approach to IT Support.
+		</p>
+		  
+             
+                        
+          </div>
+        </div><!-- End F.A.Q Item-->
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-5">
+            <i class="bx bx-help-circle"></i>
+            <h4 class="fs-5 p-2">Second Recommendation</h4>
+          </div>
+          <div class="col-lg-7 lh-lg">
+            <!--<p>
+             Disconnected Calls, Silent Call/Chat, and Not Entitled tickets are prone to low NPS scores, relative to other issues/applications. Not Entitled tickets in particular are prone to increased user effort. A simplified routing logic at the top of the funnel will help users, and chat users in particular, find appropriate channels of support in a more efficacious manner. Providing improved access to relevant documenation will have a similar effect. (For example, if users struggle in setting up VS Code, it's unclear how they're to get help.)
+            </p>-->
+            <p class="fs-5">
+                Follow-up with Detractors to ensure adequate issue resolution, to increase visibility into IT Support breakdowns, and to facilitate the discovery of improvement opportunities beyond the scope of those provided in NPS surveys.
+                Liaise with other Technology Support teams (e.g., HRIT, Cirrus) to share best practices and develop a more thorough understanding of pain points driving IBMERs to seek support in general. 
+            </p>  
+                        
+          </div>
+        </div><!-- End F.A.Q Item-->
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-5">
+            <i class="bx bx-help-circle"></i>
+            <h4 class="fs-5 p-2">Third Recommendation</h4>
+          </div>
+          <div class="col-lg-7 lh-lg">
+            <!--<p>
+             Disconnected Calls, Silent Call/Chat, and Not Entitled tickets are prone to low NPS scores, relative to other issues/applications. Not Entitled tickets in particular are prone to increased user effort. A simplified routing logic at the top of the funnel will help users, and chat users in particular, find appropriate channels of support in a more efficacious manner. Providing improved access to relevant documenation will have a similar effect. (For example, if users struggle in setting up VS Code, it's unclear how they're to get help.)
+            </p>-->
+	    <p class="fs-5">
+                 Implement an heirarchical flagging system like the kind briefly outlined in this analysis. The resultant standardization will support an increasingly automated approach to issue analysis, one that improves visibility into user pain points, and supports real-time responsiveness to high-volume issues. Currently, tickets are flagged consistently at the level of the application, but greater detail requires manual investigation of chat logs and ticket descriptions. A standardized approach to ticket categorization at the level of the issue will improve understanding of deployed applications in terms of their impact on user productivity.
+            </p>  
+          </div>
+        </div><!-- End F.A.Q Item-->
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-5">
+            <i class="bx bx-help-circle"></i>
+            <h4 class="fs-5 p-2">Fourth Recommendation</h4>
+          </div>
+          <div class="col-lg-7 lh-lg">
+            <!--<p>
+             Disconnected Calls, Silent Call/Chat, and Not Entitled tickets are prone to low NPS scores, relative to other issues/applications. Not Entitled tickets in particular are prone to increased user effort. A simplified routing logic at the top of the funnel will help users, and chat users in particular, find appropriate channels of support in a more efficacious manner. Providing improved access to relevant documenation will have a similar effect. (For example, if users struggle in setting up VS Code, it's unclear how they're to get help.)
+            </p>-->
+		  
+	<p class="fs-5">
+                Develop extractive Question Answering model, and deploy as overlay to IT Support content. Said application will improve self-support, allowing users to pinpoint relevant information effectively and efficiently. Additionally, provide increased support for Not Entitled applications, focusing on documentation in particular. This will ensure users, and chat users in particular, find appropriate channels of support prior to ticket creation. (For example, if users struggle in setting up VS Code, it's not immediately clear how they're to get the right help. The same holds for other common IDEs.)
+	</p>
+                        
+          </div>
+        </div><!-- End F.A.Q Item-->
+
+        <!--<div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="400">
+          <div class="col-lg-5">
+            <i class="bx bx-help-circle"></i>
+            <h4>What's the benefit of reducing not entitled tickets?</h4>
+          </div>
+          <div class="col-lg-7">
+            <p>
+              Reduced wait time, increased user satisfaction, and improved advisor morale.
+            </p>
+          </div>
+        </div>-->
+        <!-- End F.A.Q Item-->
+
+      </div>
+    </section><!-- End Frequently Asked Questions Section -->
+  </main><!-- End #main -->
+
+
+  <!-- ======= Footer ======= -->
+  <div id="particles-js-two">
+
+
+    <div>
+      <!-- End Footer -->
+
+      <!--<div id="preloader"></div>-->
+      <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+          class="bi bi-arrow-up-short"></i></a>
+
+      <!-- Vendor JS Files -->
+      <script src="assets/vendor/purecounter/purecounter.js"></script>
+      <script src="assets/vendor/aos/aos.js"></script>
+      <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+      <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+      <!-- <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>-->
+      <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+
+      <!-- Import Particles.js and app.js files -->
+      <script src="particles.js-master/particles.js"></script>
+      <script src="particles.js-master/demo/js/app.js"></script>
+      <script src="particles.js-master/demo/js/app 2.js"></script>
+
+      <!-- Template Main JS File -->
+      <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
